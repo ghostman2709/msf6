@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+se#!/data/data/com.termux/files/usr/bin/bash
 echo -e "\e[32m
 
     ██████╗ ███╗   ██╗██╗     ██╗███╗   ██╗███████╗      
@@ -209,7 +209,7 @@ echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ssh-keygen -t rsa -b 4096 -C "mendieta-sony@outlook.com"
 git git clone git@github.com:ghostman2709/windows.git
 cd w10
-git remote add origin git@github.com:ghostman2709/windows.git
+git remote add origin git@github.com:ghostman2709/w10.git
 git config --global user.email "mendieta-sony@outlook.com
 git config --global user.name "ghostman2709"
 git config --global user.password"Asdfg27@09"
