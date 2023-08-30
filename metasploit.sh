@@ -48,7 +48,7 @@ source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKI
 
 echo ""
 echo ""
-printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
+#printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
 echo ""
 echo ""
 sleep 3
@@ -111,9 +111,9 @@ pkg install openjdk-17 -y
 pkg install bacula-fd -y
 pkg install nmap -y
 pkg install -y binutils python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git ruby -o Dpkg::Options::="--force-confnew"
-python3 -m pip install --upgrade pip
-python3 -m pip install requests
-pkg update -y && pkg upgrade
+python3 -m pip install --upgrade pip -y
+python3 -m pip install requests -y
+pkg update -y && pkg upgrade -y
 echo ""
 echo ""
 echo ""
