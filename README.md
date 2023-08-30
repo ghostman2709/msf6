@@ -1,6 +1,6 @@
 # Metasploit Framework 6 in Termux
 
-![Metasploit 6 running](https://i.imgur.com/yLFQhvP.png)
+![Metasploit 6 running](https://commons.wikimedia.org/wiki/File:Annonymos_hacker_mask_hooded.png)
 
 ## How to:
 ### Auto
