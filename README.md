@@ -5,7 +5,7 @@
 ## How to:
 ### Auto
 ```bash
-source <(curl -fsSL gh repo clone ghostman2709/msf6)
+source <(curl -fsSL https://raw.githubusercontent.com/ghostman2709/msf6/main/metasploit.sh)
 ```
 
 ### Manual
