@@ -40,7 +40,7 @@ center() {
 echo ""
 echo ""
 echo -e "\e[92m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[96m                       erico Loading..."
+echo -e "\e[96m                       erico mendieta Rodriguez Loading..."
 echo -e "\e[93m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
 
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
@@ -232,9 +232,9 @@ echo ""
 echo -e "\e[1m \e[36m[+] There  Metasploit Framwork Tool Ready \e[m \e[21"
 echo ""
 echo ""
-#echo -e "\e[92m[1] Open Metasploit :\e[93m install kali by erico \e[m "
+echo -e "\e[92m[1] Donate Help Network BTC :\e[93m wallet BTC 187eHgphh1nF6DonWvaMx8e5QozKVTdPeN \e[m "
 #echo ""
-#echo -e "\e[92m[2] Now Type This Command to Run:\e[93m msfconsole \e[m "
+echo -e "\e[92m[2] Donate Help Network BEP20 USDT:\e[93m wallet USDT 0x1efa78c845e271c3aa14609a04069c6b77f24e64 \e[m "
 echo ""
 #termux-open-url https://telegram.me/TermuxHackTutorial
 echo ""
