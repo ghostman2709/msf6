@@ -38,7 +38,7 @@ center() {
 echo ""
 echo ""
 echo -e "\e[92m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[96m                       erico loading...."
+echo -e "\e[96m                      oi erico loading...."
 echo -e "\e[93m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
 
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
@@ -46,19 +46,19 @@ source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKI
 
 echo ""
 echo ""
-printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
+#printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
 echo ""
 echo ""
 sleep 3
 echo ""
 echo -ne "\e[33m Internet Status : "
 timeout 3s curl -fIs "https://api.github.com" > /dev/null
-[ $? -eq 0 ] && echo -e "\e[92m Online\e[0m" || echo -e "\e[31mOffline\e[0m"
+[ $? -eq 0 ] && echo -e "\e[92m Ok esta Oline\e[0m" || echo -e "\e[31mOffline\e[0m"
 echo ""
 #termux-open-url https://telegram.me/onlinehacking
 sleep 4
 echo ""
-echo -e "\e[95m============ \e[91m*** \e[96minstalando dependencias por erico \e[91m*** \e[95m============\e[97m"
+echo -e "\e[95m============ \e[91m*** \e[96m instalando dependencias por erico \e[91m*** \e[95m============\e[97m"
 sleep 3
 
 ## Remove not working repositories
@@ -71,7 +71,7 @@ rm -fr $PREFIX/lib/ruby/gems
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
 
 # needs binutils
-termux-setup-storage
+termux-setup-storage -y
 pkg install root-rep -y
 pkg install unstable-repo -y
 pkg install x11-repo -y
@@ -232,7 +232,7 @@ echo ""
 echo ""
 echo -e "\e[92m[1] Open Metasploit :\e[93m install kali by erico \e[m "
 echo ""
-echo -e "\e[92m[2] Now Type This Command to Run:\e[93mmsfconsole \e[m "
+echo -e "\e[92m[2] Now Type This Command to Run:\e[93m msfconsole \e[m "
 echo ""
 #termux-open-url https://telegram.me/TermuxHackTutorial
 echo ""
