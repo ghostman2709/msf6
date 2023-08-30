@@ -238,4 +238,3 @@ echo -e "\e[92m[2] Donate Help Network BEP20 USDT:\e[93m wallet USDT 0x1efa78c84
 echo ""
 #termux-open-url https://telegram.me/TermuxHackTutorial
 echo ""
-msfconsole
