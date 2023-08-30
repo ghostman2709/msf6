@@ -5,7 +5,7 @@
 ## How to:
 ### Auto
 ```bash
-source <(curl -fsSL https://github.com/ghostman2709/msf6.git)
+source <(curl -fsSL gh repo clone ghostman2709/msf6)
 ```
 
 ### Manual
