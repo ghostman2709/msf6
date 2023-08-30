@@ -203,7 +203,29 @@ echo ""
 #sleep 3
 #echo ""
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
-# sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
+# sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenomecho -e "\e[95m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
+echo -e "\e[93m                   preparar github meus repos"
+echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ssh-keygen -t rsa -b 4096 -C "mendieta-sony@outlook.com"
+git git clone git@github.com:ghostman2709/windows.git
+cd w10
+git remote add origin git@github.com:ghostman2709/windows.git
+git config --global user.email "mendieta-sony@outlook.com
+git config --global user.name "ghostman2709"
+git config --global user.password"Asdfg27@09"
+cd w10
+git init
+git pull origin
+git status
+git add .
+git status
+echo ""
+echo ""
+echo ""
+echo -e "\e[95m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
+echo -e "\e[93m                   Fix github ssh"
+echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
 
 
 # sed -Ei "s/(\^\\\c\s+)/(\^\\\C-\\\s)/" $PREFIX/opt/metasploit-framework/lib/msf/core/exploit/remote/vim_soap.rb
