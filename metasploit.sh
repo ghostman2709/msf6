@@ -198,10 +198,10 @@ cd metasploit-framework
 bundle install
 echo ""
 echo ""
-echo -e "\033[32m           Suppressing Warnings\033[0m"
-center "*"
-sleep 3
-echo ""
+#echo -e "\033[32m           Suppressing Warnings\033[0m"
+#center "*"
+#sleep 3
+#echo ""
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
 # sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
 
@@ -209,8 +209,8 @@ echo ""
 # sed -Ei "s/(\^\\\c\s+)/(\^\\\C-\\\s)/" $PREFIX/opt/metasploit-framework/lib/msf/core/exploit/remote/vim_soap.rb
 
 # Warning occurs during payload generation
-sed -i '86 {s/^/#/};96 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
-sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb
+#sed -i '86 {s/^/#/};96 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
+#sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb
 
 ## openssl issue has been fixed 
 
@@ -232,9 +232,10 @@ echo ""
 echo -e "\e[1m \e[36m[+] There  Metasploit Framwork Tool Ready \e[m \e[21"
 echo ""
 echo ""
-echo -e "\e[92m[1] Open Metasploit :\e[93m install kali by erico \e[m "
-echo ""
-echo -e "\e[92m[2] Now Type This Command to Run:\e[93m msfconsole \e[m "
+#echo -e "\e[92m[1] Open Metasploit :\e[93m install kali by erico \e[m "
+#echo ""
+#echo -e "\e[92m[2] Now Type This Command to Run:\e[93m msfconsole \e[m "
 echo ""
 #termux-open-url https://telegram.me/TermuxHackTutorial
 echo ""
+msfconsole
