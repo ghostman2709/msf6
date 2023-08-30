@@ -46,7 +46,7 @@ source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKI
 
 echo ""
 echo ""
-#printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
+printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
 echo ""
 echo ""
 sleep 3
