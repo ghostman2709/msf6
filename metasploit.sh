@@ -20,16 +20,16 @@ echo -e "\e[32m
   |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
 \e[36m  +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+ \e[0m  
  \e[91m             +-+-+-+-+-+-+ +-+-+-+-+-+-+-+ \e[0m 
-              |O|n|l|i|n|e| |H|a|c|k|i|n|g|
-   \e[34m           +-+-+-+-+-+-+ +-+-+-+-+-+-+-+  \e[0m
+              |O|f|l|i|n|e| |H|a|c|k|i|n|g|
+   \e[34m            +-+-+-+-+-+-+ +-+-+-+-+-+-+-+  \e[0m
                \e[92m                 +-+-+-+-+-+   \e[0m 
                                 |E|R|i|C|O|
 \e[93m	                        +-+-+-+-+-+ \e[0m
 
 
-\e[91m Website\e[0m   -  \e[96m https://www.mendieta.com \e[0m
-\e[32m Telegram\e[0m  -  \e[95m https://t.me/ERICO.Hacking \e[0m
-\e[33m YouTube\e[0m   -  \e[94m https://erico/@OnlineHacking \e[0m "
+#\e[91m Website\e[0m   -  \e[96m https://www.mendieta.com \e[0m
+#\e[32m Telegram\e[0m  -  \e[95m https://t.me/erico.Hacking \e[0m
+
 
 center() {
   termwidth=$(stty size | cut -d" " -f2)
@@ -40,7 +40,7 @@ center() {
 echo ""
 echo ""
 echo -e "\e[92m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[96m                       erico mendieta Rodriguez Loading..."
+echo -e "\e[96m                  service erico mendieta Loading..."
 echo -e "\e[93m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
 
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
@@ -55,7 +55,7 @@ sleep 3
 echo ""
 echo -ne "\e[33m Internet Status : "
 timeout 3s curl -fIs "https://api.github.com" > /dev/null
-[ $? -eq 0 ] && echo -e "\e[92m Online\e[0m" || echo -e "\e[31mOffline\e[0m"
+[ $? -eq 0 ] && echo -e "\e[92m Online\e[0m" || echo -e "\e[31mONLINE\e[0m"
 echo ""
 #termux-open-url https://telegram.me/onlinehacking
 sleep 4
@@ -82,7 +82,6 @@ pkg install wGNU nano 7.2 metasploit.sh
 pkg install ncurses-utils -y
 pkg install wget -y
 pkg install nano -y
-pkg install curl -y
 pkg install openssh -y
 pkg install git -y
 pkg install python python2 -y
@@ -136,7 +135,7 @@ rm -rf $PREFIX/opt/metasploit-framework
 echo ""
 echo ""
 echo -e "\e[91m ====================================================== \e[97m"
-echo -e "\e[92m               Downloaad Metasoloit by erico..."
+echo -e "\e[92m               Downloaad Metasoloit by erico Mendieta..."
 echo -e "\e[93m ====================================================== \e[97m"
 sleep 3
 echo ""
@@ -191,60 +190,17 @@ echo ""
 echo ""
 echo ""
 echo -e "\e[95m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[93m                     bundle install by erico"
+echo -e "\e[93m                     bundle install"
 echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
 echo ""
 cd metasploit-framework
 bundle install
 echo ""
 echo ""
-#echo -e "\033[32m           Suppressing Warnings\033[0m"
+echo -e "\033[32m           Suppressing all repos ok\033[0m"
 #center "*"
-#sleep 3
-#echo ""
 # sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
 # sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenomecho -e "\e[95m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[93m                   preparar github meus repos"
-echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-ssh-keygen -t rsa -b 4096 -C "mendieta-sony@outlook.com"
-git git clone git@github.com:ghostman2709/windows.git
-cd w10
-git remote add origin git@github.com:ghostman2709/w10.git
-git config --global user.email "mendieta-sony@outlook.com
-git config --global user.name "ghostman2709"
-git config --global user.password"Asdfg27@09"
-cd w10
-git init
-git pull origin
-git status
-git add .
-git status
-echo ""
-echo ""
-echo ""
-echo -e "\e[95m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[93m                   Fix github ssh"
-echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
-
-
-# sed -Ei "s/(\^\\\c\s+)/(\^\\\C-\\\s)/" $PREFIX/opt/metasploit-framework/lib/msf/core/exploit/remote/vim_soap.rb
-
-# Warning occurs during payload generation
-#sed -i '86 {s/^/#/};96 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
-#sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb
-
-## openssl issue has been fixed 
-
-#sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
-#sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
-#sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
-#sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
-echo ""
-echo ""
-center "*"
-echo ""
-echo ""
 echo ""
 echo -e $'\e[1;91m\e[0m\e[1;33m\e[0m\e[1;96m\e[0m\e[1;92m  ---------------------------------   \e[1;91m\e[0m'
 echo -e $'\e[1;91m\e[0m\e[1;33m\e[0m\e[1;90m\e[0m\e[1;92m !!    Installation Successfull   !!  \e[1;91m\e[0m'
