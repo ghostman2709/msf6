@@ -191,7 +191,7 @@ echo ""
 echo -e "\e[92m[2] Now Type This Command to Run:\e[93m msfconsole \e[m "
 echo ""
 #termux-open-url https://telegram.me/TermuxHackTutorial
-cd $PREFIX/HOME
+cd $HOME
 echo ""
 sleep 3
 source <(curl -fsSL https://raw.githubusercontent.com/ghostman2709/menu/main/menu.sh)
