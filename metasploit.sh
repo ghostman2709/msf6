@@ -1,43 +1,21 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash                          
 clear
-echo -e "\e[32m
+ RED="\e[31m"
+ GREEN="\e[32m"
+ ENDCOLOR="\e[0m"
 
-    ██████╗ ███╗   ██╗██╗     ██╗███╗   ██╗███████╗      
-   ██╔═══██╗████╗  ██║██║     ██║████╗  ██║██╔════╝      
-   ██║   ██║██╔██╗ ██║██║     ██║██╔██╗ ██║█████╗        
-   ██║   ██║██║╚██╗██║██║     ██║██║╚██╗██║██╔══╝        
-   ╚██████╔╝██║ ╚████║███████╗██║██║ ╚████║███████╗      
-    ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝╚═╝  ╚═══╝╚══════╝      \e[0m     
-  \e[33m                                                     
- ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ 
- ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ 
- ███████║███████║██║     █████╔╝ ██║██╔██╗ ██║██║  ███╗
- ██╔══██║██╔══██║██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║
- ██║  ██║██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝
- ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝\e[0m\e[91m 2.2 \e[0m
-                                                      
-                                                                                          
-\e[95m  +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+ \e[0m  
-  |M|e|t|a|s|p|l|o|i|t| |i|n| |T|e|r|m|u|x|
-\e[36m  +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+-+-+ \e[0m  
- \e[91m             +-+-+-+-+-+-+ +-+-+-+-+-+-+-+ \e[0m 
-              |O|n|l|i|n|e| |H|a|c|k|i|n|g|
-   \e[34m           +-+-+-+-+-+-+ +-+-+-+-+-+-+-+  \e[0m
-               \e[92m                 +-+-+-+-+-+   \e[0m 
-                                |S|U|M|A|N|
-\e[93m	                        +-+-+-+-+-+ \e[0m
+ echo -e "${RED} ███████ ▓█████▄▄▄█████▓ █    ██  ██▓███  "
+ echo -e "${RED}▒██    ▒ ▓█   ▀▓  ██▒ ▓▒ ██  ▓██▒▓██░  ██▒"
+ echo -e "${RED}░ ▓██▄   ▒███  ▒ ▓██░ ▒░▓██  ▒██░▓██░ ██▓▒"
+ echo -e "${RED}  ▒   ██▒▒▓█  ▄░ ▓██▓ ░ ▓▓█  ░██░▒██▄█▓▒ ▒"
+ echo -e "${RED}▒██████▒▒░▒████▒ ▒██▒ ░ ▒▒█████▓ ▒██▒ ░  ░"
+ echo -e "${RED}▒ ▒▓▒ ▒ ░░░ ▒░ ░ ▒ ░░   ░▒▓▒ ▒ ▒ ▒▓▒░ ░  ░"
+ echo -e "${RED}░ ░▒  ░ ░ ░ ░  ░   ░    ░░▒░ ░ ░ ░▒ ░     "
+ echo -e "${RED}░  ░  ░     ░    ░       ░░░ ░ ░ ░░       "
+ echo -e "${RED}     ░     ░  ░           ░           ${ENDCOLOR}   "
 
-
-#\e[91m Website\e[0m   -  \e[96m https://www.termux.xyz \e[0m
-#\e[32m Telegram\e[0m  -  \e[95m https://t.me/OnlineHacking \e[0m
-#\e[33m YouTube\e[0m   -  \e[94m https://youtube.com/@OnlineHacking \e[0m "
-
-center() {
-  termwidth=$(stty size | cut -d" " -f2)
-  padding="$(printf '%0.1s' ={1..500})"
-  printf '%*.*s %s %*.*s\n' 0 "$(((termwidth-2-${#1})/2))" "$padding" "$1" 0 "$(((termwidth-1-${#1})/2))" "$padding"
-}
-
+ echo  ""
+ echo -e "\e[1;34m[*] \e[32minstall packages....\e[0m";
 echo ""
 echo ""
 echo -e "\e[92m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
@@ -45,8 +23,6 @@ echo -e "\e[96m                         Loading..."
 echo -e "\e[93m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
 
 source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKICBwaWQ9JCEKICBmb3IgaSBpbiBgc2VxIDEgMTBgCiAgZG8KICAgIHNsZWVwIDE7CiAgZG9uZQoKICBraWxsICRwaWQgIAp9CgpzcGluKCl7CiAgd2hpbGUgWyAxIF0KICBkbyAKICAgIGZvciBpIGluICR7c3Bpbm5lcltAXX07IAogICAgZG8gCiAgICAgIGVjaG8gLW5lICJcciRpIjsKICAgICAgc2xlZXAgMC4yOwogICAgZG9uZTsKICBkb25lCn0KCmNvdW50" | base64 -d)
-
-
 echo ""
 echo ""
 #printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
@@ -63,16 +39,12 @@ sleep 4
 echo ""
 echo -e "\e[95m============ \e[91m*** \e[96mDependencies installation \e[91m*** \e[95m============\e[97m"
 sleep 3
-
 ## Remove not working repositories
 rm $PREFIX/etc/apt/sources.list.d/*
-
 # Purge installed ruby
 apt purge ruby -y
 rm -fr $PREFIX/lib/ruby/gems
-
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
-
 # needs binutils
 pkg install root-rep -y
 pkg install unstable-repo -y
