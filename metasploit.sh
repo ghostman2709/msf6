@@ -28,13 +28,13 @@ echo ""
 #printf "\e[100;330m[\e[10m ⨝ ◘ ↦ ]\e[1;40m\e[10m :\e[1;32m Join Telegram Channel \e[1;33m @OnlineHacking  !\e[0m"
 echo ""
 echo ""
-sleep 3
+#sleep 3
 echo ""
-echo -ne "\e[33m Internet Status : "
-timeout 3s curl -fIs "https://api.github.com" > /dev/null
-[ $? -eq 0 ] && echo -e "\e[92m Online\e[0m" || echo -e "\e[31mOffline\e[0m"
+#echo -ne "\e[33m Internet Status : "
+#timeout 3s curl -fIs "https://api.github.com" > /dev/null
+#[ $? -eq 0 ] && echo -e "\e[92m Online\e[0m" || echo -e "\e[31mOffline\e[0m"
 echo ""
-sleep 4
+#sleep 4
 echo ""
 echo -e "\e[95m============ \e[91m*** \e[96mDependencies installation \e[91m*** \e[95m============\e[97m"
 sleep 3
