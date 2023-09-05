@@ -28,3 +28,4 @@ And run `msfconsole`
 ```bash
 msfconsole
 ```
+# metasploit6
