@@ -105,18 +105,18 @@ echo -e "\e[96m ====================================================== \e[97m"
 sleep 3
 echo ""
 cd $PREFIX/opt/metasploit-framework
-# sed '/rbnacl/d' -i Gemfile.lock
-# sed '/rbnacl/d' -i metasploit-framework.gemspec
+sed '/rbnacl/d' -i Gemfile.lock
+sed '/rbnacl/d' -i metasploit-framework.gemspec
 
-#sed -i "277,\$ s/2.8.0/2.2.0/" Gemfile.lock
+sed -i "277,\$ s/2.8.0/2.2.0/" Gemfile.lock
 
 gem install bundler
 declare NOKOGIRI_VERSION=$(cat Gemfile.lock | grep -i nokogiri | sed 's/nokogiri [\(\)]/(/g' | cut -d ' ' -f 5 | grep -oP "(.).[[:digit:]][\w+]?[.].")
-#sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
+sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
 
 gem install nokogiri -v $NOKOGIRI_VERSION -- --use-system-libraries
 
-# for aarch64 if nokogiri problem persist do this 
+for aarch64 if nokogiri problem persist do this 
 
 bundle config build.nokogiri "--use-system-libraries --with-xml2-include=$PREFIX/include/libxml2"; bundle install
 
@@ -125,8 +125,8 @@ bundle update activesupport
 bundle update --bundler
 bundle install -j$(nproc --all)
 
-#$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
-# rm ./modules/auxiliary/gather/http_pdf_authors.rb
+$PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
+rm ./modules/auxiliary/gather/http_pdf_authors.rb
 if [ -e $PREFIX/bin/msfconsole ];then
 	rm $PREFIX/bin/msfconsole
 fi
@@ -156,22 +156,22 @@ echo ""
 center "*"
 sleep 3
 echo ""
-# sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
-# sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
+sed -i '355 s/::Exception, //' $PREFIX/bin/msfvenom
+sed -i '481, 483 {s/^/#/}' $PREFIX/bin/msfvenom
 
 
-# sed -Ei "s/(\^\\\c\s+)/(\^\\\C-\\\s)/" $PREFIX/opt/metasploit-framework/lib/msf/core/exploit/remote/vim_soap.rb
+sed -Ei "s/(\^\\\c\s+)/(\^\\\C-\\\s)/" $PREFIX/opt/metasploit-framework/lib/msf/core/exploit/remote/vim_soap.rb
 
-# Warning occurs during payload generation
-#sed -i '86 {s/^/#/};96 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
-#sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb
+Warning occurs during payload generation
+sed -i '86 {s/^/#/};96 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/concurrent-ruby-1.0.5/lib/concurrent/atomic/ruby_thread_local_var.rb
+sed -i '442, 476 {s/^/#/};436, 438 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/logging-2.3.1/lib/logging/diagnostic_context.rb
 
 ## openssl issue has been fixed 
 
-#sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
-#sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
-#sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
-#sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
+sed -i '13,15 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/encryption_algorithm/functionable.rb
+sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp256.rb
+sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp384.rb
+sed -i '14 {s/^/#/}' $PREFIX/lib/ruby/gems/3.1.0/gems/hrr_rb_ssh-0.4.2/lib/hrr_rb_ssh/transport/server_host_key_algorithm/ecdsa_sha2_nistp521.rb
 echo ""
 echo ""
 center "*"
