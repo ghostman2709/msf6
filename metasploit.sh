@@ -15,7 +15,7 @@
  echo -e "${RED}     ░     ░  ░           ░           ${ENDCOLOR}   "
 
 echo  ""
-echo -e "\e[1;34m[*] \e[32minstall packages....\e[0m";
+echo -e "\e[1;34m[*] \e[32minstall packages by erico ....\e[0m";
 echo ""
 echo ""
 echo -e "\e[92m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
@@ -72,7 +72,7 @@ echo ""
 echo ""
 echo ""
 echo -e "\e[95m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
-echo -e "\e[93m                   Fix Ruby BigDecimal"
+echo -e "\e[93m                 Erico Fix Ruby BigDecimal"
 echo -e "\e[96m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ \e[0m  "
 echo ""
 sleep 3
@@ -90,7 +90,7 @@ rm -rf $PREFIX/opt/metasploit-framework
 echo ""
 echo ""
 echo -e "\e[91m ====================================================== \e[97m"
-echo -e "\e[92m               Downloading Metasoloit..."
+echo -e "\e[92m              Erico Downloading Metasoloit..."
 echo -e "\e[93m ====================================================== \e[97m"
 sleep 3
 echo ""
@@ -192,6 +192,7 @@ echo -e "\e[92m[2] Now Type This Command to Run:\e[93m msfconsole \e[m "
 echo ""
 #termux-open-url https://telegram.me/TermuxHackTutorial
 cd $HOME
-echo ""
-sleep 3
-source <(curl -fsSL https://raw.githubusercontent.com/ghostman2709/menu/main/menu.sh)
+msfconsole
+#echo ""
+#sleep 3
+#source <(curl -fsSL https://raw.githubusercontent.com/ghostman2709/menu/main/menu.sh)
