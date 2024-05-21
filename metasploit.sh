@@ -30,6 +30,7 @@ apt purge ruby -y
 rm -fr $PREFIX/lib/ruby/gems
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
 # needs binutils
+pkg install postgresql -y
 pkg install root-rep -y
 pkg install unstable-repo -y
 pkg install x11-repo -y
@@ -94,8 +95,23 @@ echo -e "\e[92m              Erico Downloading Metasoloit..."
 echo -e "\e[93m ====================================================== \e[97m"
 sleep 3
 echo ""
-cd $PREFIX/opt
-git clone https://github.com/rapid7/metasploit-framework.git --depth=1
+# Dependencies Installation
+center "* Dependencies installation..."
+pkg update -y
+pkg upgrade -y -o Dpkg::Options::="--force-confnew"
+pkg install -y binutils python autoconf bison clang c>
+python3 -m pip install requests
+# Fix ruby BigDecimal
+#center "* Fix ruby BigDecimal"
+#source <(curl -sL https://github.com/termux/termux-p>
+
+# Erase Old Metasploit Folder
+center "* Erasing old metasploit folder..."
+if [ -d "${PREFIX}/opt/metasploit-framework" ]; then
+  rm -rf ${PREFIX}/opt/metasploit-framework
+
+
+
 echo ""
 echo ""
 echo ""
