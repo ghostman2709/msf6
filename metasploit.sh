@@ -79,6 +79,8 @@ pkg update -y && pkg upgrade -y
 python3 -m pip install --upgrade pip
 python3 -m pip install requests
 pkg install iproute2 -y
+pkg install sox -y
+
 # Fix ruby BigDecimal 
 #center "* Fix ruby BigDecimal"
 #source <(curl -sL https://github.com/termux/termux-packages/files/2912002/fix-ruby-bigdecimal.sh.txt)
