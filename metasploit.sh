@@ -38,47 +38,47 @@ center "* Dependencies installation..."
 pkg update -y
 pkg upgrade -y -o Dpkg::Options::="--force-confnew"
 pkg install -y binutils python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git ruby -o Dpkg::Options::="--force-confnew"
-python3 -m pip install requests
-pkg install postgresql -y
-pkg install root-rep -y
-pkg install unstable-repo -y
-pkg install x11-repo -y
-pkg install ncurses-utils -y
-pkg install wGNU nano 7.2 metasploit.sh
-pkg install ncurses-utils -y
-pkg install wget -y
-pkg install nano -y
-pkg install openssh -y
-pkg install git -y
-pip install lolcat -y
-pkg install c-script -y
-pkg install coreutils -y
-pkg install kona -y
-pkg install o-editor -y
-pkg install q-dns-client -y
-pkg install xorg-server -y
-pkg install openjdk-17 -y
-pkg install bacula-fd -y
-pkg install nmap -yget -y
-pkg install curl -y
-pkg install openssh -y
-pkg install git -y
-pkg install python python2 -y
-pip install lolcat -y
-pkg install c-script -y
-pkg install coreutils -y
-pkg install kona -y
-pkg install o-editor -y
-pkg install q-dns-client -y
-pkg install xorg-server -y
-pkg install openjdk-17 -y
-pkg install bacula-fd -y
-pkg install nmap -y
-pkg install -y binutils python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git ruby -o Dpkg::Options::="--force-confnew"
-pkg update -y && pkg upgrade -y
-python3 -m pip install --upgrade pip
-python3 -m pip install requests
-pkg install iproute2 -y
+#python3 -m pip install requests
+#pkg install postgresql -y
+#pkg install root-rep -y
+#pkg install unstable-repo -y
+#pkg install x11-repo -y
+#pkg install ncurses-utils -y
+#pkg install wGNU nano 7.2 metasploit.sh
+#pkg install ncurses-utils -y
+#pkg install wget -y
+#pkg install nano -y
+#pkg install openssh -y
+#pkg install git -y
+#pip install lolcat -y
+#pkg install c-script -y
+#pkg install coreutils -y
+#pkg install kona -y
+#pkg install o-editor -y
+#pkg install q-dns-client -y
+#pkg install xorg-server -y
+#pkg install openjdk-17 -y
+#pkg install bacula-fd -y
+#pkg install nmap -yget -y
+#pkg install curl -y
+#pkg install openssh -y
+#pkg install git -y
+#pkg install python python2 -y
+#pip install lolcat -y
+#pkg install c-script -y
+#pkg install coreutils -y
+#pkg install kona -y
+#pkg install o-editor -y
+#pkg install q-dns-client -y
+#pkg install xorg-server -y
+#pkg install openjdk-17 -y
+#pkg install bacula-fd -y
+#pkg install nmap -y
+#pkg install -y binutils python autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git ruby -o Dpkg::Options::="--force-confnew"
+#pkg update -y && pkg upgrade -y
+#python3 -m pip install --upgrade pip
+#python3 -m pip install requests
+#pkg install iproute2 -y
 pkg install sox -y
 
 # Fix ruby BigDecimal 
